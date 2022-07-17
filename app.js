@@ -1,2 +1,6 @@
-const Test = require('./modules/test.controller')
-Test.solution();
+const express = require('express')
+const app = express()
+
+require('./routers/index')(app)
+
+app.listen(8080, console.log("server is up"))
