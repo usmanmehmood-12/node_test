@@ -3,4 +3,4 @@ const app = express()
 
 require('./routers/index')(app)
 
-app.listen(8080, console.log("server is up"))
+app.listen(process.env.port || 8080, console.log("server is up"))
