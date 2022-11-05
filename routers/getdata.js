@@ -7,5 +7,9 @@ router.get('/', (req, res) => {
     const result = Test.solution()
     res.status(200).json(result)
 })
+router.get('/test', (req, res) => {
+    console.log('inside get')
+    res.send('It worked!')
+})
 
 module.exports = router
